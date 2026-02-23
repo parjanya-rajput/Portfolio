@@ -4,6 +4,19 @@ const ExperienceSection = () => {
     const experiences = [
         {
             title: 'Application Developer Intern',
+            company: 'Axocom Axolotl Communications',
+            date: 'Dec 2025 – Current',
+            location: 'Remote, IN',
+            points: [
+                'Implemented a standalone data acquisition pipeline with Playwright automation and CAPTCHA bypass strategies to extract and process structured political data.',
+                'Built a scalable Node.js backend server using Apollo Server with Express middleware to serve processed data via GraphQL APIs.',
+                'React-based political dashboard with optimized Apollo Client configuration for efficient GraphQL data querying and real-time data visualization.'
+            ],
+            tags: ['Playwright', 'Node.js', 'GraphQL', 'React'],
+            hasLine: true,
+        },
+        {
+            title: 'Application Developer Intern',
             company: 'Basic Tech Agency',
             date: 'Feb 2025 – May 2025 & Dec 2025 – Current',
             location: 'Remote, India',
