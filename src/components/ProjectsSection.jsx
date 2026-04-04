@@ -6,6 +6,19 @@ const ProjectsSection = () => {
 
     const featuredProjects = [
         {
+            title: 'Axocom SaaS Dashboard',
+            subtitle: 'Political Data Platform & Pipeline',
+            description: 'Built a standalone data acquisition pipeline with Playwright and CAPTCHA bypass to scrape 1M+ voter records. Developed an Apollo Server GraphQL backend with Azure deployment, alongside a React-based SaaS dashboard for real-time data visualization.',
+            features: ['GraphQL API', 'Data Scraping Pipeline', 'Azure Deployment', 'CAPTCHA Bypass'],
+            tech: ['React', 'GraphQL', 'Playwright', 'Node.js', 'Azure', 'Apollo Server and Client'],
+            image: 'https://raw.githubusercontent.com/parjanya-rajput/axocom_client/refs/heads/main/UI%20Images/Screenshot%202026-04-04%20at%201.15.00%E2%80%AFPM.png',
+            githubFrontend: 'https://github.com/parjanya-rajput/axocom_client',
+            githubBackend: 'https://github.com/parjanya-rajput/axocom_backend',
+            liveLink: 'https://axocom-client.vercel.app/',
+            featured: true,
+            icon: BarChart3,
+        },
+        {
             title: 'Kumbh Milan',
             subtitle: 'Vicinity Based Friends Discovery',
             description: 'Connects users attending "Kumbh Mela" festival, enabling interactions based on geographic proximity for both Android and iOS. Supports Hindi & English with L10n Flutter localizations.',
@@ -102,14 +115,50 @@ const ProjectsSection = () => {
                     </div>
                 )}
                 <div className="project-overlay">
-                    <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                    >
-                        <Github size={24} />
-                    </a>
+                    {project.github && (
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-link"
+                            title="Source Code"
+                        >
+                            <Github size={24} />
+                        </a>
+                    )}
+                    {project.githubFrontend && (
+                        <a
+                            href={project.githubFrontend}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-link"
+                            title="Frontend Source Code"
+                        >
+                            <Github size={24} />
+                        </a>
+                    )}
+                    {project.githubBackend && (
+                        <a
+                            href={project.githubBackend}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-link"
+                            title="Backend Source Code"
+                        >
+                            <Github size={24} />
+                        </a>
+                    )}
+                    {project.liveLink && (
+                        <a
+                            href={project.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-link"
+                            title="Live Demo"
+                        >
+                            <ExternalLink size={24} />
+                        </a>
+                    )}
                 </div>
             </div>
             <div className="project-content">
