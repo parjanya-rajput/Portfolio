@@ -24,7 +24,7 @@ const ProjectsSection = () => {
             description: 'Led a team of 9 students in developing a modular chat application with 15+ reusable UI components following Atomic Design Pattern and MVC architecture.',
             features: ['AI Message Suggestions', 'One-to-One & Group Chat', 'Firebase Integration'],
             tech: ['React Native', 'Expo', 'Firebase', 'Cloudinary'],
-            image: null,
+            image: 'https://raw.githubusercontent.com/parjanya-rajput/G12_Chat_Application/refs/heads/main/ChatApp/assets/splash.png',
             github: 'https://github.com/parjanya-rajput/G12_Chat_Application',
             featured: false,
             icon: MessageSquare,
